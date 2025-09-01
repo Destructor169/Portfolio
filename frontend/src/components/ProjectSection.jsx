@@ -227,7 +227,10 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
         </div>
 
         {/* Projects Grid */}
-        <div className="relative overflow-hidden">
+        <div 
+          className="relative overflow-hidden cursor-grab active:cursor-grabbing"
+          ref={scrollContainerRef}
+        >
           <div 
             className="flex gap-6 transition-transform duration-300 ease-out"
             style={{ 
@@ -250,6 +253,19 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
                   isLarge={showTwoBlocks || (index === 0 && scrollPosition === 0)}
                 />
               </div>
+            ))}
+          </div>
+          
+          {/* Scroll Indicator */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {Array.from({ length: maxScroll + 1 }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setScrollPosition(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === scrollPosition ? 'bg-[#E50914]' : 'bg-gray-600 hover:bg-gray-500'
+                }`}
+              />
             ))}
           </div>
         </div>
