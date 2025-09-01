@@ -198,7 +198,7 @@ const Contact = () => {
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                     asChild
                   >
-                    <a href={`https://${personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer">
+                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer">
                       <Linkedin className="w-4 h-4 mr-2" />
                       Connect on LinkedIn
                     </a>
