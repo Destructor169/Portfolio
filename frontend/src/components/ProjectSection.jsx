@@ -181,6 +181,18 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
     return () => document.removeEventListener('wheel', handleWheel);
   }, [scrollPosition, maxScroll]);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (showDropdown && !e.target.closest('.dropdown-container')) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [showDropdown]);
+
   if (showAll) {
     return (
       <div className="py-16 bg-black">
