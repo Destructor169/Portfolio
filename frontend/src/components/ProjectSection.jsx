@@ -118,15 +118,28 @@ const ProjectCard = ({ project, isLarge = false }) => {
             isHovered ? 'opacity-100' : 'opacity-0'
           }`}>
             {project.github && (
-              <Button size="sm" variant="outline" className="border-gray-600 text-white hover:bg-gray-800">
-                <Github className="w-4 h-4 mr-1" />
-                Code
+              <Button 
+                size="sm" 
+                variant="outline" 
+                className="border-gray-600 text-white hover:bg-gray-800"
+                asChild
+              >
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Github className="w-4 h-4 mr-1" />
+                  Code
+                </a>
               </Button>
             )}
             {project.demo && (
-              <Button size="sm" className="bg-[#E50914] hover:bg-[#E50914]/90 text-white">
-                <ExternalLink className="w-4 h-4 mr-1" />
-                Demo
+              <Button 
+                size="sm" 
+                className="bg-[#E50914] hover:bg-[#E50914]/90 text-white"
+                asChild
+              >
+                <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-4 h-4 mr-1" />
+                  Demo
+                </a>
               </Button>
             )}
           </div>
