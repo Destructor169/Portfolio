@@ -47,11 +47,11 @@ export const featuredProjects = [
   }
 ];
 
-export const nlpProjects = [
+export const personalProjects = [
   {
     id: "email-spam-detection",
     title: "Email Spam Detection System",
-    description: "Machine learning-based email spam detection system using natural language processing techniques and classification algorithms.",
+    description: "Machine learning-based email spam detection system using natural language processing techniques and classification algorithms to identify and filter spam emails with high accuracy.",
     category: "NLP",
     technologies: ["Python", "Scikit-learn", "NLTK", "Pandas", "Machine Learning"],
     status: "Complete",
@@ -63,7 +63,7 @@ export const nlpProjects = [
   {
     id: "fine-tuning-llms",
     title: "Fine-Tuning Large Language Models",
-    description: "Implementation of fine-tuning techniques for large language models including parameter-efficient methods and domain adaptation.",
+    description: "Implementation of fine-tuning techniques for large language models including parameter-efficient methods and domain adaptation. Explores LoRA, PEFT, and other advanced techniques for customizing LLMs for specific tasks.",
     category: "NLP",
     technologies: ["Transformers", "PyTorch", "Hugging Face", "LoRA", "PEFT"],
     status: "Complete",
@@ -75,7 +75,7 @@ export const nlpProjects = [
   {
     id: "book-recommending-system",
     title: "Book Recommendation System",
-    description: "Intelligent book recommendation system using collaborative filtering and content-based filtering with natural language processing for book descriptions.",
+    description: "Intelligent book recommendation system using collaborative filtering and content-based filtering with natural language processing for book descriptions. Provides personalized book suggestions based on user preferences and reading history.",
     category: "NLP",
     technologies: ["Python", "Pandas", "Scikit-learn", "NLP", "Collaborative Filtering"],
     status: "Complete",
@@ -87,13 +87,37 @@ export const nlpProjects = [
   {
     id: "image-encryption",
     title: "Image Encryption using Chaos Theory",
-    description: "Advanced image encryption and decryption system implementing chaos theory algorithms for secure image transmission and storage.",
+    description: "Advanced image encryption and decryption system implementing chaos theory algorithms for secure image transmission and storage. Uses mathematical chaos principles to create highly secure encryption methods.",
     category: "Computer Vision",
     technologies: ["Python", "Chaos Theory", "Cryptography", "OpenCV", "NumPy"],
     status: "Complete",
     year: "2023",
     backgroundImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=450&fit=crop",
     github: "https://github.com/Destructor169/Image-Encryption-Decryption-using-Chaos-Theory",
+    demo: null
+  },
+  {
+    id: "self-driving-car",
+    title: "Self-Driving Car Simulation",
+    description: "Autonomous vehicle simulation implementing computer vision and machine learning algorithms for path planning and obstacle detection. Features real-time decision making and advanced navigation systems.",
+    category: "Computer Vision",
+    technologies: ["Python", "OpenCV", "Machine Learning", "Computer Vision", "Simulation"],
+    status: "Complete",
+    year: "2023",
+    backgroundImage: "https://images.unsplash.com/photo-1489599651485-c88340bdec42?w=800&h=450&fit=crop",
+    github: "https://github.com/Destructor169/Self-Driving-Car",
+    demo: null
+  },
+  {
+    id: "sonic-gamer",
+    title: "Sonic Gamer - Game Development",
+    description: "Interactive game development project featuring classic platformer mechanics with modern game design principles and AI-powered gameplay elements. Built using Python and Pygame with custom graphics and sound systems.",
+    category: "Game Development",
+    technologies: ["Python", "Pygame", "Game Development", "AI", "Graphics"],
+    status: "Complete",
+    year: "2023",
+    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
+    github: "https://github.com/Destructor169/sonic-gamer",
     demo: null
   }
 ];
