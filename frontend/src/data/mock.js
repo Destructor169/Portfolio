@@ -1,12 +1,12 @@
 // Mock data for Netflix-style AI/ML Portfolio
 
 export const personalInfo = {
-  name: "Aditya",
+  name: "Aditya Kumar",
   title: "AI/ML Researcher & Engineer",
   subtitle: "Specializing in NLP, LLMs & Deep Learning",
   bio: "Passionate researcher working on cutting-edge AI/ML projects with focus on Natural Language Processing and Large Language Models. Currently pursuing advanced research in Generative AI and optimization.",
   location: "IIT Gandhinagar, India",
-  email: "aditya@example.com",
+  email: "aditya.kumar@iitgn.ac.in",
   github: "https://github.com/Destructor169",
   linkedin: "https://www.linkedin.com/in/aditya-iitgn",
   profileImage: "https://customer-assets.emergentagent.com/job_ai-portfolio-hub-11/artifacts/jsumew97_Screenshot%202025-05-22%20at%201.49.02%E2%80%AFPM.png"
