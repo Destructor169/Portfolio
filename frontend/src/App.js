@@ -7,22 +7,23 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import { Toaster } from "./components/ui/toaster";
-import { nlpProjects, courseProjects } from "./data/mock";
+import { personalProjects, courseProjects } from "./data/mock";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-black">
       <Hero />
+      <Experience />
       <ProjectSection 
         title="Personal Projects" 
-        projects={nlpProjects}
+        projects={personalProjects}
+        showTwoBlocks={true}
       />
       <ProjectSection 
         title="Course Projects" 
         projects={courseProjects}
       />
       <Skills />
-      <Experience />
       <Contact />
     </div>
   );
