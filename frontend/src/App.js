@@ -22,6 +22,7 @@ const Home = () => {
       <ProjectSection 
         title="Course Projects" 
         projects={courseProjects}
+        showTwoBlocks={true}
       />
       <Skills />
       <Contact />
