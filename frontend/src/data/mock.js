@@ -39,7 +39,7 @@ export const featuredProjects = [
     featured: true,
     year: "2024",
     duration: "4 months",
-    basegroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
     github: "https://github.com/Destructor169/Optimizing-Energy-Usage-for-the-IITGN-Campus",
     demo: null,
     collaborators: ["Siddharth Verma", "Mahesh Dange", "Yash Ahire", "Tanvi Yadav", "Manas Agarwal"],
