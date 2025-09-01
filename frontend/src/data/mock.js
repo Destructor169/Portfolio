@@ -9,6 +9,7 @@ export const personalInfo = {
   email: "aditya.kumar@iitgn.ac.in",
   github: "https://github.com/Destructor169",
   linkedin: "https://www.linkedin.com/in/aditya-iitgn/",
+  resume: "https://iitgnacin-my.sharepoint.com/:b:/g/personal/22110015_iitgn_ac_in/EQIh4YzqcORIuJIWDGfMsYsBe5GJk7Z3Gi5I_-IZo42j1Q?e=TqvxHa",
   profileImage: "https://customer-assets.emergentagent.com/job_ai-portfolio-hub-11/artifacts/jsumew97_Screenshot%202025-05-22%20at%201.49.02%E2%80%AFPM.png"
 };
 
