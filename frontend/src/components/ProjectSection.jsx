@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Card, CardContent } from './ui/card';
-import { Github, ExternalLink, ChevronLeft, ChevronRight, Calendar, Users } from 'lucide-react';
+import { Github, ExternalLink, ChevronLeft, ChevronRight, Calendar, Users, ChevronDown } from 'lucide-react';
 
 const ProjectCard = ({ project, isLarge = false }) => {
   const [isHovered, setIsHovered] = useState(false);
