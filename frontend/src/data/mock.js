@@ -15,35 +15,35 @@ export const personalInfo = {
 export const featuredProjects = [
   {
     id: "transgan",
-    title: "TransGAN: Transformer-based GAN Architecture",
-    description: "Novel research project implementing Transformer architecture in Generative Adversarial Networks for enhanced image generation quality and training stability.",
+    title: "TransGAN for 3D Point Cloud Generation",
+    description: "Research project adapting Transformer-based Generative Adversarial Networks for 3D point cloud synthesis, exploring pure Transformer architecture for complex spatial dependencies in 3D data.",
     category: "Research",
-    technologies: ["PyTorch", "Transformers", "GANs", "Computer Vision"],
+    technologies: ["PyTorch", "Transformers", "GANs", "3D Point Clouds", "WGAN-GP"],
     status: "Published",
     featured: true,
     year: "2024",
-    duration: "8 months",
+    duration: "6 months",
     backgroundImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/TransGAN",
+    github: "https://github.com/Destructor169/TransGan",
     demo: null,
-    collaborators: ["IIT Gandhinagar Research Lab"],
-    impact: "Achieved 15% improvement in FID scores compared to traditional GAN architectures"
+    collaborators: ["Vatsalraj Rathod", "Vedanshi Raiyani", "IIT Gandhinagar"],
+    impact: "Successfully deployed full generation pipeline for 3D point cloud synthesis using pure Transformer architecture"
   },
   {
     id: "electricity-optimization",
-    title: "Optimizing Electricity Consumption at IITGN",
-    description: "Machine learning-based optimization system for reducing electricity consumption across IIT Gandhinagar campus using predictive analytics and smart scheduling.",
+    title: "Optimizing Energy Usage for IITGN Campus",
+    description: "Comprehensive analysis of energy consumption patterns, room efficiency evaluation, solar energy potential exploration, and sustainable policy proposals for reducing electricity usage at IITGN.",
     category: "Research",
-    technologies: ["Python", "Scikit-learn", "Time Series Analysis", "IoT", "Data Analytics"],
-    status: "Deployed",
+    technologies: ["Python", "EQUEST Modeling", "Solar Analysis", "Time Series", "CAGR Forecasting"],
+    status: "Completed",
     featured: true,
     year: "2024",
-    duration: "10 months",
-    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/electricity-optimization",
+    duration: "4 months",
+    basegroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
+    github: "https://github.com/Destructor169/Optimizing-Energy-Usage-for-the-IITGN-Campus",
     demo: null,
-    collaborators: ["IITGN Sustainability Team"],
-    impact: "Reduced campus electricity consumption by 22% through predictive optimization"
+    collaborators: ["Siddharth Verma", "Mahesh Dange", "Yash Ahire", "Tanvi Yadav", "Manas Agarwal"],
+    impact: "Identified potential to reduce campus electricity consumption through predictive optimization and sustainable policies"
   }
 ];
 
