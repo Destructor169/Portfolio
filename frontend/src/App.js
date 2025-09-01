@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import ProjectSection from "./components/ProjectSection";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import { Toaster } from "./components/ui/toaster";
 import { nlpProjects, courseProjects } from "./data/mock";
@@ -13,7 +14,7 @@ const Home = () => {
     <div className="min-h-screen bg-black">
       <Hero />
       <ProjectSection 
-        title="NLP & Language Models" 
+        title="Personal Projects" 
         projects={nlpProjects}
       />
       <ProjectSection 
@@ -21,6 +22,7 @@ const Home = () => {
         projects={courseProjects}
       />
       <Skills />
+      <Experience />
       <Contact />
     </div>
   );
