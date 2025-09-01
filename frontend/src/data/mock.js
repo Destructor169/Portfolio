@@ -218,7 +218,7 @@ export const workExperience = [
     workType: "On-site",
     description: "Mentored 400+ students by resolving technical queries, delivering live coding demos, and evaluating assignments to strengthen conceptual understanding.",
     skills: ["Teaching", "Mentoring", "Technical Support", "Live Coding", "Assignment Evaluation"],
-    current: true
+    current: false
   },
   {
     id: "pal-mentor",
