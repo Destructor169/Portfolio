@@ -254,12 +254,94 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
           </div>
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-8">
-          <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800">
+        {/* View All Button with Dropdown */}
+        <div className="text-center mt-8 relative">
+          <Button 
+            variant="outline" 
+            className="border-gray-600 text-white hover:bg-gray-800"
+            onClick={() => setShowDropdown(!showDropdown)}
+          >
             View All {title}
-            <ChevronRight className="w-4 h-4 ml-2" />
+            <ChevronDown className={`w-4 h-4 ml-2 transition-transform ${showDropdown ? 'rotate-180' : ''}`} />
           </Button>
+
+          {/* Dropdown Menu */}
+          {showDropdown && (
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-gray-900 border border-gray-700 rounded-lg shadow-xl z-50 w-full max-w-4xl">
+              <div className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto">
+                  {projects.map((project) => (
+                    <div key={project.id} className="bg-gray-800 rounded-lg p-4 hover:bg-gray-750 transition-colors">
+                      <div className="flex items-start justify-between mb-2">
+                        <Badge 
+                          variant="secondary" 
+                          className={`${
+                            project.category === 'Research' ? 'bg-[#E50914] text-white' :
+                            project.category === 'NLP' ? 'bg-blue-600 text-white' :
+                            project.category === 'Computer Vision' ? 'bg-purple-600 text-white' :
+                            project.category === 'Course Work' ? 'bg-green-600 text-white' :
+                            'bg-orange-600 text-white'
+                          } text-xs`}
+                        >
+                          {project.category}
+                        </Badge>
+                        <span className="text-gray-400 text-xs">{project.year}</span>
+                      </div>
+                      
+                      <h4 className="text-white font-semibold mb-2 text-sm leading-tight">
+                        {project.title}
+                      </h4>
+                      
+                      <p className="text-gray-300 text-xs mb-3 line-clamp-2">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-1 mb-3">
+                        {project.technologies.slice(0, 3).map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs text-gray-400 border-gray-600">
+                            {tech}
+                          </Badge>
+                        ))}
+                        {project.technologies.length > 3 && (
+                          <Badge variant="outline" className="text-xs text-gray-500 border-gray-600">
+                            +{project.technologies.length - 3}
+                          </Badge>
+                        )}
+                      </div>
+                      
+                      <div className="flex gap-2">
+                        {project.github && (
+                          <Button 
+                            size="sm" 
+                            variant="outline" 
+                            className="border-gray-600 text-white hover:bg-gray-700 text-xs px-2 py-1"
+                            asChild
+                          >
+                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-3 h-3 mr-1" />
+                              Code
+                            </a>
+                          </Button>
+                        )}
+                        {project.demo && (
+                          <Button 
+                            size="sm" 
+                            className="bg-[#E50914] hover:bg-[#E50914]/90 text-white text-xs px-2 py-1"
+                            asChild
+                          >
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-3 h-3 mr-1" />
+                              Demo
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
