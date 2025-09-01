@@ -95,13 +95,24 @@ const Hero = () => {
               </div>
 
               <div className="flex gap-4">
-                <Button className="bg-[#E50914] hover:bg-[#E50914]/90 text-white font-medium px-6">
-                  <Play className="w-4 h-4 mr-2" />
-                  View Project
+                <Button 
+                  className="bg-[#E50914] hover:bg-[#E50914]/90 text-white font-medium px-6"
+                  asChild
+                >
+                  <a href={featured.github} target="_blank" rel="noopener noreferrer">
+                    <Play className="w-4 h-4 mr-2" />
+                    View Project
+                  </a>
                 </Button>
-                <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800">
-                  <Github className="w-4 h-4 mr-2" />
-                  View Code
+                <Button 
+                  variant="outline" 
+                  className="border-gray-600 text-white hover:bg-gray-800"
+                  asChild
+                >
+                  <a href={featured.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4 mr-2" />
+                    View Code
+                  </a>
                 </Button>
               </div>
             </div>
