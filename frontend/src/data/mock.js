@@ -231,7 +231,7 @@ export const workExperience = [
     workType: "On-site",
     description: "Supporting learners by addressing course-related doubts, conducting lectures with hands-on code demonstrations, and curating and evaluating assignments.",
     skills: ["Course Support", "Lecture Delivery", "Code Demonstrations", "Assignment Curation", "Student Mentoring"],
-    current: true
+    current: false
   }
 ];
 
