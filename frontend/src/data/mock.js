@@ -193,11 +193,40 @@ export const skills = {
   "Web Technologies": ["FastAPI", "Flask", "React", "Node.js", "MongoDB"]
 };
 
+export const workExperience = [
+  {
+    id: "teaching-assistant",
+    title: "Teaching Assistant",
+    company: "Indian Institute of Technology Gandhinagar",
+    type: "Part-time",
+    duration: "Jan 2025 - May 2025",
+    period: "5 months",
+    location: "Gandhinagar, Gujarat, India",
+    workType: "On-site",
+    description: "Mentored 400+ students by resolving technical queries, delivering live coding demos, and evaluating assignments to strengthen conceptual understanding.",
+    skills: ["Teaching", "Mentoring", "Technical Support", "Live Coding", "Assignment Evaluation"],
+    current: true
+  },
+  {
+    id: "pal-mentor",
+    title: "Pal Mentor",
+    company: "IITGN-X",
+    type: "Part-time", 
+    duration: "Jan 2025 - Apr 2025",
+    period: "4 months",
+    location: "Gandhinagar, Gujarat, India",
+    workType: "On-site",
+    description: "Supporting learners by addressing course-related doubts, conducting lectures with hands-on code demonstrations, and curating and evaluating assignments.",
+    skills: ["Course Support", "Lecture Delivery", "Code Demonstrations", "Assignment Curation", "Student Mentoring"],
+    current: true
+  }
+];
+
 export const stats = {
   totalProjects: 12,
   researchPapers: 2,
   certifications: 4,
-  yearsExperience: 3,
+  yearsExperience: 1,
   githubStars: 150,
   contributions: 500
 };
