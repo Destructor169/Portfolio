@@ -236,9 +236,9 @@ export const workExperience = [
 ];
 
 export const stats = {
-  totalProjects: 12,
+  totalProjects: 10,
   researchPapers: 2,
-  certifications: 4,
+  certifications: 5,
   yearsExperience: 1,
   githubStars: 150,
   contributions: 500
