@@ -146,30 +146,6 @@ export const courseProjects = [
     backgroundImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=450&fit=crop",
     github: "https://github.com/Destructor169/FAI_Project",
     demo: null
-  },
-  {
-    id: "self-driving-car",
-    title: "Self-Driving Car Simulation",
-    description: "Autonomous vehicle simulation implementing computer vision and machine learning algorithms for path planning and obstacle detection.",
-    category: "Computer Vision",
-    technologies: ["Python", "OpenCV", "Machine Learning", "Computer Vision", "Simulation"],
-    status: "Complete",
-    year: "2023",
-    backgroundImage: "https://images.unsplash.com/photo-1489599651485-c88340bdec42?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/Self-Driving-Car",
-    demo: null
-  },
-  {
-    id: "sonic-gamer",
-    title: "Sonic Gamer - Game Development",
-    description: "Interactive game development project featuring classic platformer mechanics with modern game design principles and AI-powered gameplay elements.",
-    category: "Game Development",
-    technologies: ["Python", "Pygame", "Game Development", "AI", "Graphics"],
-    status: "Complete",
-    year: "2023",
-    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/sonic-gamer",
-    demo: null
   }
 ];
 
