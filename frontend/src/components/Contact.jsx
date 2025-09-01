@@ -15,7 +15,7 @@ import {
 import { personalInfo, certifications } from '../data/mock';
 
 const CertificationCard = ({ cert }) => (
-  <Card className="bg-gray-900 border-gray-800 hover:border-gray-700 transition-colors">
+  <Card className="bg-gray-900 border-gray-800 hover:border-gray-700 transition-colors group">
     <CardContent className="p-6">
       <div className="flex items-start justify-between mb-4">
         <Award className="w-6 h-6 text-[#E50914] flex-shrink-0 mt-1" />
@@ -24,7 +24,7 @@ const CertificationCard = ({ cert }) => (
         </Badge>
       </div>
       
-      <h3 className="font-bold text-white mb-2 text-lg leading-tight">
+      <h3 className="font-bold text-white mb-2 text-lg leading-tight group-hover:text-[#E50914] transition-colors">
         {cert.title}
       </h3>
       
@@ -45,8 +45,23 @@ const CertificationCard = ({ cert }) => (
         )}
       </div>
       
-      <div className="text-xs text-gray-500">
-        ID: {cert.credentialId}
+      <div className="space-y-1">
+        <div className="text-xs text-gray-500">
+          ID: {cert.credentialId}
+        </div>
+        {cert.credentialUrl && (
+          <Button 
+            size="sm" 
+            variant="outline" 
+            className="w-full border-gray-600 text-white hover:bg-gray-800 text-xs"
+            asChild
+          >
+            <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="w-3 h-3 mr-1" />
+              View Certificate
+            </a>
+          </Button>
+        )}
       </div>
     </CardContent>
   </Card>
