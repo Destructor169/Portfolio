@@ -151,36 +151,49 @@ export const courseProjects = [
 
 export const certifications = [
   {
-    id: "ml-specialization",
-    title: "Machine Learning Specialization",
-    issuer: "Stanford University (Coursera)",
-    date: "2023",
-    credentialId: "ABCD1234",
-    skills: ["Machine Learning", "Python", "Neural Networks", "Deep Learning"]
+    id: "java-oop",
+    title: "Object Oriented Programming in Java Course",
+    issuer: "Scaler",
+    date: "July 2025",
+    credentialId: "Online Course",
+    credentialUrl: "https://moonshot.scaler.com/s/sl/-qG9hRpqu0?_gl=1*edset0*_gcl_au*MTAwODYzODYwMC4xNzUzMDA1MzQ0*FPAU*MTAwODYzODYwMC4xNzUzMDA1MzQ0*_ga*MTE4NDQ1NTA5Ni4xNzUzMDA1MzQ0*_ga_53S71ZZG1X*czE3NTMwMDUzNDQkbzEkZzEkdDE3NTMwMDUzOTckajckbDAkaDkzNTUzNjM.",
+    skills: ["Java", "Object Oriented Programming"]
   },
   {
-    id: "deep-learning",
-    title: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI (Coursera)",
-    date: "2023",
-    credentialId: "EFGH5678",
-    skills: ["Deep Learning", "CNNs", "RNNs", "TensorFlow", "PyTorch"]
+    id: "generative-ai-explorer",
+    title: "Generative AI Explorer - Vertex AI",
+    issuer: "Google Cloud Arcade Facilitator Program",
+    date: "April 2025",
+    credentialId: "14564959",
+    credentialUrl: "https://www.cloudskillsboost.google/public_profiles/518b4d31-483c-47d6-928e-a0ee61e21997/badges/14564959?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    skills: ["Generative AI"]
   },
   {
-    id: "nlp-specialization",
-    title: "Natural Language Processing Specialization",
-    issuer: "DeepLearning.AI (Coursera)",
-    date: "2024",
-    credentialId: "IJKL9012",
-    skills: ["NLP", "Transformers", "BERT", "Sentiment Analysis", "Language Models"]
+    id: "mlops-genai",
+    title: "Machine Learning Operations (MLOps) for Generative AI",
+    issuer: "Google Cloud Arcade Facilitator Program",
+    date: "April 2025",
+    credentialId: "14563198",
+    credentialUrl: "https://www.cloudskillsboost.google/public_profiles/518b4d31-483c-47d6-928e-a0ee61e21997/badges/14563198?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    skills: ["Generative AI", "Machine Learning", "MLOps"]
   },
   {
-    id: "aws-ml",
-    title: "AWS Machine Learning - Specialty",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    credentialId: "MNOP3456",
-    skills: ["AWS", "SageMaker", "ML Deployment", "Cloud Computing"]
+    id: "intro-genai",
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud Skills Boost",
+    date: "December 2024",
+    credentialId: "13372718",
+    credentialUrl: "https://www.cloudskillsboost.google/public_profiles/518b4d31-483c-47d6-928e-a0ee61e21997/badges/13372718?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    skills: ["Generative AI"]
+  },
+  {
+    id: "rag-chatbot",
+    title: "Build RAG Chatbot with Python",
+    issuer: "LetsUpgrade",
+    date: "May 2025",
+    credentialId: "LUERCBMAY125182",
+    credentialUrl: "https://verify.letsupgrade.in/certificate/LUERCBMAY125182",
+    skills: ["Machine Learning", "RAG", "Python", "LLMs"]
   }
 ];
 
