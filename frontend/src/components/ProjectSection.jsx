@@ -149,9 +149,10 @@ const ProjectCard = ({ project, isLarge = false }) => {
   );
 };
 
-const ProjectSection = ({ title, projects, showAll = false }) => {
+const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = false }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const maxScroll = Math.max(0, projects.length - 3);
+  const itemsPerView = showTwoBlocks ? 2 : 3;
+  const maxScroll = Math.max(0, projects.length - itemsPerView);
 
   const scroll = (direction) => {
     if (direction === 'left' && scrollPosition > 0) {
