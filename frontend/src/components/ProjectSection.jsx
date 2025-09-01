@@ -151,8 +151,10 @@ const ProjectCard = ({ project, isLarge = false }) => {
 
 const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = false }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [showDropdown, setShowDropdown] = useState(false);
   const itemsPerView = showTwoBlocks ? 2 : 3;
   const maxScroll = Math.max(0, projects.length - itemsPerView);
+  const scrollContainerRef = useRef(null);
 
   const scroll = (direction) => {
     if (direction === 'left' && scrollPosition > 0) {
@@ -161,6 +163,23 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
       setScrollPosition(scrollPosition + 1);
     }
   };
+
+  // Add scroll wheel support
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (scrollContainerRef.current?.contains(e.target)) {
+        e.preventDefault();
+        if (e.deltaY > 0 && scrollPosition < maxScroll) {
+          setScrollPosition(scrollPosition + 1);
+        } else if (e.deltaY < 0 && scrollPosition > 0) {
+          setScrollPosition(scrollPosition - 1);
+        }
+      }
+    };
+
+    document.addEventListener('wheel', handleWheel, { passive: false });
+    return () => document.removeEventListener('wheel', handleWheel);
+  }, [scrollPosition, maxScroll]);
 
   if (showAll) {
     return (
