@@ -211,13 +211,24 @@ const ProjectSection = ({ title, projects, showAll = false, showTwoBlocks = fals
         <div className="relative overflow-hidden">
           <div 
             className="flex gap-6 transition-transform duration-300 ease-out"
-            style={{ transform: `translateX(-${scrollPosition * 33.333}%)` }}
+            style={{ 
+              transform: showTwoBlocks 
+                ? `translateX(-${scrollPosition * 50}%)` 
+                : `translateX(-${scrollPosition * 33.333}%)`
+            }}
           >
             {projects.map((project, index) => (
-              <div key={project.id} className="flex-none w-full md:w-1/2 lg:w-1/3">
+              <div 
+                key={project.id} 
+                className={`flex-none ${
+                  showTwoBlocks 
+                    ? 'w-full md:w-1/2' 
+                    : 'w-full md:w-1/2 lg:w-1/3'
+                }`}
+              >
                 <ProjectCard 
                   project={project} 
-                  isLarge={index === 0 && scrollPosition === 0}
+                  isLarge={showTwoBlocks || (index === 0 && scrollPosition === 0)}
                 />
               </div>
             ))}
