@@ -223,9 +223,14 @@ const Contact = () => {
                     Get a comprehensive overview of my skills, experience, and achievements.
                   </p>
                   
-                  <Button className="w-full bg-[#E50914] hover:bg-[#E50914]/90 text-white">
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Resume
+                  <Button 
+                    className="w-full bg-[#E50914] hover:bg-[#E50914]/90 text-white"
+                    asChild
+                  >
+                    <a href={personalInfo.resume} target="_blank" rel="noopener noreferrer">
+                      <Download className="w-4 h-4 mr-2" />
+                      Download Resume
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
