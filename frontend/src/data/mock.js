@@ -9,7 +9,7 @@ export const personalInfo = {
   email: "aditya@example.com",
   github: "https://github.com/Destructor169",
   linkedin: "https://www.linkedin.com/in/aditya-iitgn",
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+  profileImage: "https://customer-assets.emergentagent.com/job_ai-portfolio-hub-11/artifacts/jsumew97_Screenshot%202025-05-22%20at%201.49.02%E2%80%AFPM.png"
 };
 
 export const featuredProjects = [
