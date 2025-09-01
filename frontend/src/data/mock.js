@@ -49,51 +49,51 @@ export const featuredProjects = [
 
 export const nlpProjects = [
   {
-    id: "sentiment-analyzer",
-    title: "Advanced Sentiment Analysis Engine",
-    description: "Deep learning-based sentiment analysis system using BERT and custom transformers for multi-language social media text analysis.",
+    id: "email-spam-detection",
+    title: "Email Spam Detection System",
+    description: "Machine learning-based email spam detection system using natural language processing techniques and classification algorithms.",
     category: "NLP",
-    technologies: ["BERT", "Transformers", "PyTorch", "FastAPI", "Docker"],
+    technologies: ["Python", "Scikit-learn", "NLTK", "Pandas", "Machine Learning"],
     status: "Complete",
     year: "2024",
     backgroundImage: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/sentiment-analyzer",
-    demo: "https://sentiment-demo.vercel.app"
+    github: "https://github.com/Destructor169/Email-spam-Detection",
+    demo: null
   },
   {
-    id: "llm-chatbot",
-    title: "Context-Aware LLM Chatbot",
-    description: "Intelligent chatbot powered by fine-tuned LLM with RAG (Retrieval-Augmented Generation) for domain-specific knowledge queries.",
+    id: "fine-tuning-llms",
+    title: "Fine-Tuning Large Language Models",
+    description: "Implementation of fine-tuning techniques for large language models including parameter-efficient methods and domain adaptation.",
     category: "NLP",
-    technologies: ["OpenAI GPT", "LangChain", "Vector DB", "FastAPI", "React"],
+    technologies: ["Transformers", "PyTorch", "Hugging Face", "LoRA", "PEFT"],
     status: "Complete",
     year: "2024",
     backgroundImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/llm-chatbot",
-    demo: "https://llm-chatbot-demo.vercel.app"
+    github: "https://github.com/Destructor169/Fine-Tuning-LLMs",
+    demo: null
   },
   {
-    id: "text-summarizer",
-    title: "Neural Text Summarization",
-    description: "Abstractive text summarization using T5 and BART models with custom training on research papers and news articles.",
+    id: "book-recommending-system",
+    title: "Book Recommendation System",
+    description: "Intelligent book recommendation system using collaborative filtering and content-based filtering with natural language processing for book descriptions.",
     category: "NLP",
-    technologies: ["T5", "BART", "Hugging Face", "PyTorch", "Streamlit"],
+    technologies: ["Python", "Pandas", "Scikit-learn", "NLP", "Collaborative Filtering"],
     status: "Complete",
     year: "2023",
     backgroundImage: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/text-summarizer",
-    demo: "https://text-summarizer-demo.streamlit.app"
+    github: "https://github.com/Destructor169/Book-Recommending-System",
+    demo: null
   },
   {
-    id: "named-entity-recognition",
-    title: "Multi-domain NER System",
-    description: "Named Entity Recognition system trained on multiple domains including biomedical, legal, and technical texts using spaCy and custom models.",
-    category: "NLP",
-    technologies: ["spaCy", "BERT", "CRF", "Python", "Flask"],
+    id: "image-encryption",
+    title: "Image Encryption using Chaos Theory",
+    description: "Advanced image encryption and decryption system implementing chaos theory algorithms for secure image transmission and storage.",
+    category: "Computer Vision",
+    technologies: ["Python", "Chaos Theory", "Cryptography", "OpenCV", "NumPy"],
     status: "Complete",
     year: "2023",
     backgroundImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=450&fit=crop",
-    github: "https://github.com/Destructor169/ner-system",
+    github: "https://github.com/Destructor169/Image-Encryption-Decryption-using-Chaos-Theory",
     demo: null
   }
 ];
