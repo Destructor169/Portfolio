@@ -8,7 +8,7 @@ export const personalInfo = {
   location: "IIT Gandhinagar, India",
   email: "aditya.kumar@iitgn.ac.in",
   github: "https://github.com/Destructor169",
-  linkedin: "https://www.linkedin.com/in/aditya-iitgn",
+  linkedin: "https://www.linkedin.com/in/aditya-iitgn/",
   profileImage: "https://customer-assets.emergentagent.com/job_ai-portfolio-hub-11/artifacts/jsumew97_Screenshot%202025-05-22%20at%201.49.02%E2%80%AFPM.png"
 };
 
